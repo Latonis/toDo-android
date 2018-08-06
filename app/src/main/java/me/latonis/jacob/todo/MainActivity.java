@@ -36,22 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mHelper = new TaskDbHelper(this);
         mTaskListView = (ListView) findViewById(R.id.toDoList);
         updateUI();
-        /*final Button button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                listItems.add(new ListItem());
-                TextView trial = (TextView) findViewById(R.id.yoon);
-                if (trial.getText() == getString(R.string.other)) {
-                    trial.setText(R.string.notOther);
-                } else {
-                    trial.setText(R.string.other);
-                }
-                ;
-                for (int i = 0; i < listItems.size(); i++) {
-                   Log.d("myTag", listItems.get(i).getDate());
-                }
-            }
-        });*/
+        
     }
 
     @Override
