@@ -1,9 +1,10 @@
 package me.latonis.jacob.todo;
 import java.util.Calendar;
+import java.util.Date;
 
 public class ListItem {
     private String input;
-    private String dateCreated;
+    private Date dateCreated;
     ListItem() {
         date();
     }
@@ -17,10 +18,10 @@ public class ListItem {
     }
 
     public String getDate() {
-        return dateCreated;
+        return dateCreated.toString();
     }
 
     private void date() {
-        this.dateCreated = Calendar.MONTH + "/" + Calendar.DAY_OF_MONTH;
+        dateCreated = Calendar.getInstance().getTime();
     }
 }
